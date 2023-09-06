@@ -1,0 +1,72 @@
+.wrapper {
+    background-color:lightskyblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.message {
+    background-color:pink;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 170px;
+}
+
+* {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+th, td {
+    border: 2px solid #E7ECFF;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #E7ECFF;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #C6D8FF;
+}
+
+#pagination {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+button {
+    background-color: #E7ECFF;
+    border: 1px solid #C6D8FF;
+    border-radius: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C6D8FF;
+}
+
+.widget {
+    width: 300px; 
+    height: 400px; 
+    overflow-y: scroll;
+}
