@@ -5,16 +5,16 @@
 // async функция всегда возвращает промис
 async function fun() {
 
-    let promise = new Promise((resolve, reject) => {
-      setTimeout(() => resolve("готово!"), 1000)
-    });
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("готово!"), 1000)
+  });
 
-    // await можно использовать только внутри async-функций
-    // await заставит интерпретатор JavaScript ждать до тех пор, пока промис справа от await не выполнится. 
-    // После чего оно вернёт его результат, и выполнение кода продолжится.
-    let result = await promise; // будет ждать, пока промис не выполнится (*)
+  // await можно использовать только внутри async-функций
+  // await заставит интерпретатор JavaScript ждать до тех пор, пока промис справа от await не выполнится. 
+  // После чего оно вернёт его результат, и выполнение кода продолжится.
+  let result = await promise; // будет ждать, пока промис не выполнится (*)
 
-    console.log(result); // "готово!"
+  console.log(result); // "готово!"
 }
   
 //fun();

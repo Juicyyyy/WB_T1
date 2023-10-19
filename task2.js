@@ -6,7 +6,7 @@ function strangeNumber(number) {
     let sum = 0;
     // с помощью цикла нахожу все делители числа и суммирую их
     for(let i = 1; i <= number / 2; i++) {
-        if(number % i === 0) {
+        if(number % i === 0) { // если делится без остатка
             sum += i;
         }
     }

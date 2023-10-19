@@ -11,7 +11,7 @@ function loadImage(url)
     // функция возвращает промис, которому в качестве аргумента передается анонимна функция с двумя параметрами resolve и reject
 	return new Promise(function(resolve, reject)
 	{
-        let img = new Image();
+        let img = new Image(); // создаёт новый экземпляр HTMLImageElement. Эквивалентно document.createElement ('img').
         img.src = url;
 		img.onload = function()
 		{

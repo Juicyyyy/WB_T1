@@ -4,16 +4,16 @@
 
 
 function outerFunction() {
-    // Переменная, которая будет доступна во внутренней функции
-    let outerVar = 10;
+  // Переменная, которая будет доступна во внутренней функции
+  let outerVar = 10;
   
-    // Внутренняя функция, которая имеет доступ к outerVar
-    function innerFunction() {
-      //console.log(outerVar);
-    }
-  
-    // Возвращаем внутреннюю функцию из внешней
-    return innerFunction;
+  // Внутренняя функция, которая имеет доступ к outerVar
+  function innerFunction() {
+    //console.log(outerVar);
+  }
+    
+  // Возвращаем внутреннюю функцию из внешней
+  return innerFunction;
 }
   
 // Создаем экземпляр внешней функции

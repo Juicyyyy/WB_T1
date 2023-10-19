@@ -4,7 +4,6 @@
 //Реализуйте методы расчета площади и периметра для каждой фигуры.
 
 class Shape {
-
     constructor() {
         this.width = 0;
         this.height = 0;
@@ -27,7 +26,6 @@ class Shape {
 
 // Подкласс для прямоугольника
 class Rectangle extends Shape {
-
     constructor(width, height) {
         super();
         this.width = width;
@@ -61,7 +59,6 @@ class Circle extends Shape {
 
 // Подкласс для треугольника
 class Triangle extends Shape {
-
     constructor(side1, side2, side3) {
         super();
         this.side1 = side1;
@@ -77,7 +74,6 @@ class Triangle extends Shape {
         const s = (this.side1 + this.side2 + this.side3) / 2;
         return Math.sqrt(s * (s - this.side1) * (s - this.side2) * (s - this.side3));
     }
-    
 }
 
 let rectangle = new Rectangle(5, 6);

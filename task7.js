@@ -11,31 +11,31 @@
 
 // Создаем массив функций
 const functionsArray = [
-    () => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          console.log("Функция 1 выполнена");
-          resolve();
-        }, 1000); // Пример задержки в 1 секунду
-      });
-    },
-    () => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          console.log("Функция 2 выполнена");
-          resolve();
-        }, 1000);
-      });
-    },
-    () => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          console.log("Функция 3 выполнена");
-          resolve();
-        }, 1000);
-      });
-    },
-  ];
+  () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("Функция 1 выполнена");
+        resolve();
+      }, 1000); // Пример задержки в 1 секунду
+    });
+  },
+  () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("Функция 2 выполнена");
+        resolve();
+      }, 1000);
+    });
+  },
+  () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("Функция 3 выполнена");
+        resolve();
+      }, 1000);
+    });
+  },
+];
   
 // Функция для последовательного выполнения функций из массива
 async function executeFunctionsSequentially() {

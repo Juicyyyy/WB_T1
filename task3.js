@@ -39,8 +39,8 @@ const memoize = f => {
   
 const fib = memoize(oldFib);
 
-//console.log(fib(3));
-//console.log(fib(7));
+// console.log(fib(3));
+// console.log(fib(7));
 
 //вычисление всех чисел в ряду Фибоначчи до числа N
 
@@ -54,7 +54,7 @@ const fibonacci_row = function (n) {
   }
 };
 
-//console.log(fibonacci_row(7));
+// console.log(fibonacci_row(7));
 
 
 //вычисление N-го простого числа
@@ -62,12 +62,12 @@ const fibonacci_row = function (n) {
 //Последовательность простых чисел начинается так: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37...
 
 function simple(n) {
-  for (let i = 2; i <= Math.sqrt(n); i++)
+  for (let i = 2; i <= n - 1; i++)
     if (n % i === 0) return false;
   return true;
 }
 
-//console.log(simple(7));
+// console.log(simple(7));
 
 
 //вычисление всех простых чисел до числа N

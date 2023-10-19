@@ -14,22 +14,21 @@ function palindrome(str){
     }
     // Проверяю четная или нечетная длина строки
     if ((changeStr.length) % 2 === 0) {
-        count = (changeStr.length) / 2;
+        count = (changeStr.length) / 2; // длина строки пополам
     } else {
     // Если длина строки равна 1, она является палиндромом
         if (changeStr.length === 1) {
             console.log(str + '\n' + 'Строка состоит из 1 символа и является палиндромом');
             return true;
         } else {
-    // Если длина строки нечетная, игнорирую символ по середине
-            count = (changeStr.length - 1) / 2;
+            // Если длина строки нечетная, игнорирую символ по середине
+            count = (changeStr.length - 1) / 2; // длина строки попалам без символа в середине
         }
     }
     // Создаю цикл, чтобы проверить все символы
     for (let i = 0; i < count; i++) {
-    // Сравниваю символы и отбросываю их, если они не совпадают
-        if (changeStr[i] != changeStr.slice(-1 - i)[0]) {
-            console.log(changeStr.slice(-1 - i)[0]);
+        // Сравниваю символы и отбрасываю их, если они не совпадают
+        if (changeStr[i] != changeStr.slice(-1 - i)[0]) { // если первый и последний символ не равны
             console.log(str + '\n' + 'Строка не является палиндромом');
             return false;
         }

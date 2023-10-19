@@ -9,7 +9,7 @@
 const widget = document.getElementById('widget');
 const apiKey = 'd923b13fd923b13fd923b13f8bda363beddd923d923b13fbddb9023c98c3167b48fe57f'; // API-ключ VK
 const ownerId = '122103467'; // ID паблика VK
-const postsPerPage = 1; // Количество постов на странице
+const postsPerPage = 9; // Количество постов на странице
 let offset = 0; // Смещение для загрузки следующей порции постов
 let postsCache = []; // Кэш для хранения загруженных данных
 
@@ -78,28 +78,28 @@ function renderPosts() {
 
 // Функция для загрузки новых постов
 async function loadMorePosts() {
-    // Увеличиваем смещение для подгрузки следующей порции постов
-    offset += postsPerPage;
-    // Загружаем следующую порцию постов
-    loadPosts();
+  // Увеличиваем смещение для подгрузки следующей порции постов
+  offset += postsPerPage;
+  // Загружаем следующую порцию постов
+  loadPosts();
 }
 
 // Добавляем обработчик события прокрутки для загрузки новых постов
 widget.addEventListener('scroll', () => {
-    const { scrollTop, scrollHeight, clientHeight } = widget;
-    if (scrollTop + clientHeight >= scrollHeight) {
-      loadMorePosts();
-    }
+  const { scrollTop, scrollHeight, clientHeight } = widget;
+  if (scrollTop + clientHeight >= scrollHeight) {
+    loadMorePosts();
+  }
 });
 
 // Инициализация виджета
 function initWidget() {
-    // Загружаем посты при инициализации виджета
-    loadPosts();
+  // Загружаем посты при инициализации виджета
+  loadPosts();
   
-    // Отображаем кэшированные посты
-    renderPosts();
-  }
+  // Отображаем кэшированные посты
+  renderPosts();
+}
 
 initWidget();
 

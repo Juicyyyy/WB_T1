@@ -6,12 +6,10 @@
 // 1026 пользователей
 // 121 пользователь
 
-
-
 export function num_word(value, words){  
     // получаю остаток от деления на 100
     let newValue = Math.abs(value) % 100; 
-    // остаток от деления этого числа на 10
+    // остаток от деления newValue на 10
     let num = newValue % 10;
     // с помощью условий нахожу нужную падежную форму
     if(newValue > 10 && newValue < 20) return value + ' ' + words[2]; 

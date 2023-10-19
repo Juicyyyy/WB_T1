@@ -4,25 +4,25 @@
 
 //Для сравнения строк можно использовать String.localeCompare() метод.
 
-    let users = [
-        { name: "John", age: 20},
-        { name: "Vlad", age: 35},
-        { name: "Julia", age: 19},
-        { name: "Anna", age: 20},
-        { name: "Been", age: 20}
-    ];
+let users = [
+    { name: "John", age: 20},
+    { name: "Vlad", age: 35},
+    { name: "Julia", age: 19},
+    { name: "Anna", age: 20},
+    { name: "Been", age: 20}
+];
 
-    users.sort(function (x, y) {
-        // сначала сортируем по полю 'age'
-        if (x.age === y.age) {
-          return x.name.localeCompare(y.name);
-        } 
-        // если имена совпадают, то сортируем по 'name'
-        else {
-           return x.age - y.age;
-        }
-    });
+users.sort(function (x, y) {
+    // если возраст совпадает, то сортируем по 'name'
+    if (x.age === y.age) {
+        return x.name.localeCompare(y.name);
+    } 
+    // сортируем по полю 'age'
+    else {
+        return x.age - y.age;
+    }
+});
 
- //console.log(users);
+//  console.log(users);
 
 

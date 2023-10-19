@@ -14,7 +14,6 @@ function getForm () {
 
         alert(name + ' ' + surname);
     });
-
 }
 
 getForm();
